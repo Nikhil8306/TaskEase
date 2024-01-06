@@ -10,10 +10,15 @@ import {
 import * as ImagePicker from "expo-image-picker";
 import * as FileSystem from "expo-file-system";
 import styles from "./ProfileCreation.js";
+import { useNavigation } from "@react-navigation/native";
 
 function ProfileCreation() {
+  const navigation = useNavigation();
   const [image, setImage] = useState(null);
-
+  const handleCreateButton = () => {
+    console.log("Navigating to Home Page");
+    navigation.navigate("HomePage");
+  };
   // useEffect(() => {
   //   getPermissionAsync();
   // }, []);
@@ -77,7 +82,10 @@ function ProfileCreation() {
         </View>
       </View>
       <View style={styles.createButtonContainer}>
-        <TouchableOpacity style={styles.createButton}>
+        <TouchableOpacity
+          onPress={handleCreateButton}
+          style={styles.createButton}
+        >
           <Text style={styles.buttonText}>Create Profile</Text>
         </TouchableOpacity>
       </View>

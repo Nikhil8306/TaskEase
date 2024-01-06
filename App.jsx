@@ -12,6 +12,7 @@ import SignUp from "./Components/SignUp/SignUp.jsx";
 import MobileVerification from "./Components/SignUp/MobileVerification.jsx";
 import MobileOTPVerification from "./Components/SignUp/MobileOTPVerification.jsx";
 import ProfileCreation from "./Components/ProfileCreation/ProfileCreation.jsx";
+import HomePage from "./Components/HomePage/HomePage.jsx";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -116,6 +117,13 @@ export default function App() {
             }}
             name="ProfileCreation"
             component={ProfileCreation}
+          />
+          <Stack.Screen
+            options={{
+              headerShown: false,
+            }}
+            name="HomePage"
+            component={HomePage}
           />
         </Stack.Navigator>
       </SafeAreaView>
