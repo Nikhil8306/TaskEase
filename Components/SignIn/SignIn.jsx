@@ -9,6 +9,7 @@ import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import google from "../../assets/google.png";
 import apple from "../../assets/apple-logo.png";
+
 function SignIn() {
   const navigation = useNavigation();
   const [email, setEmail] = useState("");
