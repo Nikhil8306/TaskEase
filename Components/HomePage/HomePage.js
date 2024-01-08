@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   navbarContainer: {
-    // backgroundColor: "red",
     height: "5%",
     width: "100%",
     justifyContent: "space-between",
@@ -16,18 +15,15 @@ const styles = StyleSheet.create({
   },
   menuImage: {
     objectFit: "contain",
-    // backgroundColor: "blue",
     height: "80%",
   },
   notificationContainer: {
-    // backgroundColor: "pink",
     width: "30%",
     height: "100%",
     justifyContent: "space-evenly",
     flexDirection: "row",
   },
   notificationImageContainer: {
-    // backgroundColor: "blue",
     height: "100%",
     width: "30%",
     borderRadius: 100,
@@ -53,7 +49,6 @@ const styles = StyleSheet.create({
   },
 
   progressContainer: {
-    // backgroundColor: "red",
     height: "30%",
     width: "95%",
     justifyContent: "space-evenly",
@@ -73,7 +68,6 @@ const styles = StyleSheet.create({
   },
   taskContainer: {
     marginTop: "5%",
-    // backgroundColor: "red",
     width: "95%",
     height: "35%",
   },
@@ -107,8 +101,8 @@ const styles = StyleSheet.create({
   },
   scrollViewContainer: {
     marginTop: "3%",
-    // backgroundColor: "blue",
-    height: "100%",
+    height: "80%",
+    // backgroundColor: "red",Jz
   },
   taskBox: {
     backgroundColor: "#FCC7BE",
@@ -135,24 +129,20 @@ const styles = StyleSheet.create({
   },
 
   taskBoxContent: {
-    // backgroundColor: "red",
     width: "50%",
     alignItems: "center",
     height: "100%",
     justifyContent: "space-around",
   },
   taskBoxContentOptions: {
-    // backgroundColor: "pink",
     flexDirection: "row",
     width: "100%",
     justifyContent: "space-evenly",
   },
 
-  // Community Container ka js yahan se hai
   communityContainer: {
     height: "25%",
     width: "95%",
-    // backgroundColor: "blue",
   },
   communityContainerTop: {
     height: "12%",
@@ -169,6 +159,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#9FBCC5",
     height: 80,
     borderRadius: 25,
+    borderColor: "black",
+    // borderWidth: 5,
     justifyContent: "space-evenly",
     flexDirection: "row",
     alignItems: "center",
@@ -191,7 +183,6 @@ const styles = StyleSheet.create({
     borderRadius: 20,
   },
   buttonContainer: {
-    // backgroundColor: "black",
     height: "80%",
     borderRadius: 100,
     justifyContent: "center",
@@ -201,6 +192,116 @@ const styles = StyleSheet.create({
     objectFit: "contain",
     height: "80%",
   },
+  completeButton: {
+    backgroundColor: "green",
+    alignSelf: "flex-end",
+    height: "100%",
+    width: "30%",
+    borderTopEndRadius: 25,
+    borderBottomEndRadius: 25,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  rowBack: {
+    justifyContent: "space-between",
+    alignItems: "center",
+    flexDirection: "row",
+    height: "90%",
+    borderColor: "red",
+    borderRadius: 25,
+  },
+  deleteButton: {
+    backgroundColor: "red",
+    alignSelf: "flex-start",
+    height: "100%",
+    width: "30%",
+    borderTopStartRadius: 25,
+    borderBottomStartRadius: 25,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  // modalContainer: {
+  //   backgroundColor: "#F9FBE7",
+  //   height: "50%",
+  //   position: "absolute",
+  //   zIndex: 1,
+  //   top: "30%",
+  //   width: "80%",
+  //   borderRadius: 20,
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  // },
+  // modalWrapper: {
+  //   backgroundColor: "#F9FBE7",
+  //   height: "55%",
+  //   position: "absolute",
+  //   zIndex: 1,
+  //   top: "25%",
+  //   left: "5%",
+  //   width: "80%",
+  //   borderRadius: 20,
+  //   alignItems: "center",
+  //   justifyContent: "space-evenly",
+  // },
+  // closeButton: {
+  //   // backgroundColor: "red",
+  //   // position: "absolute",
+  //   left: "42%",
+  //   top: "30%",
+  // },
+  // modalContent: {
+  //   width: "100%",
+  //   height: "100%",
+  //   alignItems: "center",
+  //   borderRadius: 20,
+  //   justifyContent: "space-evenly",
+  // },
+  // giftImage: {
+  //   height: "40%",
+  //   objectFit: "contain",
+  //   // backgroundColor: "red",
+  //   width: "100%",
+  // },
+  // modalHeading: {
+  //   fontSize: 25,
+  //   color: "#7BC3B6",
+  // },
+  // modalDescription: {
+  //   // backgroundColor: "red",
+  //   width: "85%",
+  //   alignContent: "center",
+  //   textAlign: "center",
+  // },
+  // appreciationText: {
+  //   width: "88%",
+  //   color: "#FEA1A1",
+  //   fontSize: 16,
+  //   alignSelf: "center",
+  //   alignContent: "center",
+  //   marginTop: "2%",
+  //   marginBottom: "2%",
+  //   textAlign: "center",
+  // },
+  // shareButton: {
+  //   backgroundColor: "white",
+  //   flexDirection: "row",
+  //   width: "40%",
+  //   height: "8%",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   borderWidth: 2,
+  //   borderColor: "#FEA1A1",
+  //   borderRadius: 10,
+  // },
+  // shareImage: {
+  //   width: "40%",
+  //   height: "90%",
+  //   objectFit: "contain",
+  // },
+  // shareText: {
+  //   fontSize: 20,
+  //   color: "#FEA1A1",
+  // },
 });
 
 export default styles;
