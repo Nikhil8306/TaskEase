@@ -13,6 +13,7 @@ import MobileVerification from "./Components/SignUp/MobileVerification.jsx";
 import MobileOTPVerification from "./Components/SignUp/MobileOTPVerification.jsx";
 import ProfileCreation from "./Components/ProfileCreation/ProfileCreation.jsx";
 import HomePage from "./Components/HomePage/HomePage.jsx";
+import Tasks from "./Components/Tasks/Tasks.jsx";
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -117,6 +118,17 @@ export default function App() {
             }}
             name="ProfileCreation"
             component={ProfileCreation}
+          />
+          <Stack.Screen
+            options={{
+              title: "Tasks",
+              headerTitleAlign: "center",
+              headerBackground: () => (
+                <View style={{ backgroundColor: "#F9FBE7", flex: 1 }} />
+              ),
+            }}
+            name="Tasks"
+            component={Tasks}
           />
           <Stack.Screen
             options={{
