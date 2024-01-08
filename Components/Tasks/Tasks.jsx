@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { View, Text, Image, TouchableOpacity, ScrollView } from "react-native";
 import CheckBox from "react-native-check-box";
 
@@ -12,16 +12,7 @@ import Modal from "react-native-modal";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 function Tasks() {
-  const [isChecked, setIsChecked] = useState(false);
-  const [isFilterModalVisible, setIsFilterModalVisible] = useState(false);
-  const [toggleCheckBox, setToggleCheckBox] = useState(false);
-
-  const [filters, setFilters] = useState([
-    "All",
-    "Completed",
-    "In progress",
-    "Cancelled",
-  ]); // Replace with your actual filters
+  const [searchText, setSearchText] = useState("");
   const [taskData, setTaskData] = useState([
     {
       id: 1,
@@ -71,7 +62,7 @@ function Tasks() {
       owner: "Group",
       habit: "Habit",
       status: "Cancelled",
-      color: "pink",
+      color: "violet",
     },
     {
       id: 6,
@@ -81,7 +72,7 @@ function Tasks() {
       owner: "Group",
       habit: "Habit",
       status: "Cancelled",
-      color: "pink",
+      color: "grey",
     },
     {
       id: 7,
@@ -91,7 +82,7 @@ function Tasks() {
       owner: "Group",
       habit: "Habit",
       status: "Cancelled",
-      color: "pink",
+      color: "yellow",
     },
     {
       id: 8,
@@ -101,153 +92,45 @@ function Tasks() {
       owner: "Group",
       habit: "Habit",
       status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 9,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 10,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 11,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 12,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 13,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 14,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 15,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 16,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 17,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 18,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 19,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 20,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 21,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
-    },
-    {
-      id: 22,
-      image: "",
-      title: "This is title3",
-      time: "Daily",
-      owner: "Group",
-      habit: "Habit",
-      status: "Cancelled",
-      color: "pink",
+      color: "purple",
     },
   ]);
+
+  useEffect(() => {
+    setFilteredData(taskData);
+  }, [taskData]);
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const [isChecked, setIsChecked] = useState(false);
+  const [isFilterModalVisible, setIsFilterModalVisible] = useState(false);
+  const [toggleCheckBox, setToggleCheckBox] = useState(false);
+
+  const [filters, setFilters] = useState([
+    "All",
+    "Completed",
+    "In progress",
+    "Cancelled",
+  ]);
+
+  const [filteredData, setFilteredData] = useState([]);
 
   const handleFilterButton = () => {
     console.log("Filter button pressed");
     setIsFilterModalVisible(true);
+  };
+  const handleSearch = (text) => {
+    const searchQuery = text.toLowerCase();
+
+    if (!searchQuery) {
+      setFilteredData(taskData);
+    } else {
+      const filteredData = taskData.filter(
+        (item) => item.title && item.title.toLowerCase().includes(searchQuery)
+      );
+      setFilteredData(filteredData);
+    }
+
+    setSearchText(text);
   };
 
   return (
@@ -256,7 +139,7 @@ function Tasks() {
         <SearchBar
           style={styles.searchBar}
           placeholder="Search here"
-          onChangeText={(text) => console.log(text)}
+          onChangeText={handleSearch}
         />
         <TouchableOpacity onPress={handleFilterButton}>
           <Image source={filterIcon} />
@@ -274,20 +157,6 @@ function Tasks() {
           ))}
         </ScrollView>
       </View>
-
-      {/* <Modal style={styles.modalWrapper} isVisible={true}>
-        <View style={styles.modalContainer}>
-          <Text>Filter</Text>
-
-          <View style={styles.achievementsContainer}>
-            <BouncyCheckbox
-              onPress={() => {
-                setIsChecked(!isChecked);
-              }}
-            />
-          </View>
-        </View>
-      </Modal> */}
 
       <Modal
         onBackButtonPress={() => {
@@ -381,7 +250,7 @@ function Tasks() {
       <View style={styles.scrollViewContainer}>
         <SwipeListView
           showsVerticalScrollIndicator={false}
-          data={taskData}
+          data={filteredData}
           renderItem={(data, rowMap) => (
             <View
               style={[styles.taskBox, { backgroundColor: data.item.color }]}
