@@ -4,7 +4,8 @@ A modern task manager ,that helps you to be always on top of your workload.Built
 
 1. **Real-time Collaboration:**
 
-2. ![alt text](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp Image 2024-01-30 at 10.37.17 PM.jpeg?raw=true)
+2. ![TaskEase Image](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp%20Image%202024-01-30%20at%2010.37.17%20PM.jpeg?raw=true)
+
 3.  - Enable users to collaborate seamlessly on tasks and projects in real-time.
    - Multiple users can work together on the same task, fostering teamwork and productivity.
 
