@@ -8,16 +8,18 @@
 2. **Real-time Collaboration:**
    - Enable seamless collaboration on tasks and projects in real-time.
    - Foster teamwork and productivity by allowing multiple users to work together on the same task.
-   - ![TaskEase Image](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp%20Image%202024-01-30%20at%2010.37.17%20PM.jpeg?raw=true)
+   - ![TaskEase Image](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp%20Image%202024-01-30%20at%2010.37.30%20PM.jpeg?raw=true)
    - 
 
 3. **Dynamic Search Functionality:**
    - Implement a dynamic search feature for quick access to specific tasks or projects.
    - Enhance user experience with instant access to relevant information.
+   - ![TaskEase Image](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp%20Image%202024-01-30%20at%2010.37.48%20PM.jpeg?raw=true)
 
 4. **Task Filters and Sorting:**
    - Integrate advanced filtering options (status, time duration, ownership).
    - Allow users to sort and organize tasks based on priority, due date, or custom criteria.
+   - ![TaskEase Image](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp%20Image%202024-01-30%20at%2010.37.56%20PM.jpeg?raw=true)
 
 5. **Bouncy Checkbox for Intuitive Interaction:**
    - Utilize the BouncyCheckbox component for engaging task status updates.
@@ -33,6 +35,7 @@
 8. **Modern UI/UX Design:**
    - Adopt a modern and clean user interface design.
    - Use vibrant colors, clear icons, and consistent styling for an aesthetically pleasing and intuitive experience.
+   - ![TaskEase Image](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp%20Image%202024-01-30%20at%2010.38.01%20PM.jpeg?raw=true)
 
 9. **Responsive Search Bar:**
    - Implement a responsive search bar that updates results in real-time.
