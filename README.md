@@ -8,6 +8,8 @@
 2. **Real-time Collaboration:**
    - Enable seamless collaboration on tasks and projects in real-time.
    - Foster teamwork and productivity by allowing multiple users to work together on the same task.
+   - ![TaskEase Image](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp Image 2024-01-30 at 10.37.30 PM.jpeg?raw=true) 
+   - 
 
 3. **Dynamic Search Functionality:**
    - Implement a dynamic search feature for quick access to specific tasks or projects.
