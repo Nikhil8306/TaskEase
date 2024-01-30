@@ -5,42 +5,42 @@ A modern task manager ,that helps you to be always on top of your workload.Built
 1. **Real-time Collaboration:**
 
 2. ![alt text](https://github.com/Nikhildotasara/TaskEase/blob/main/assets/WhatsApp Image 2024-01-30 at 10.37.17 PM.jpeg?raw=true)
-   - Enable users to collaborate seamlessly on tasks and projects in real-time.
+3.  - Enable users to collaborate seamlessly on tasks and projects in real-time.
    - Multiple users can work together on the same task, fostering teamwork and productivity.
 
-3. **Dynamic Search Functionality:**
+4. **Dynamic Search Functionality:**
 
    - Implement a dynamic search feature that allows users to quickly find specific tasks or projects.
    - Enhance user experience by providing instant access to relevant information.
 
-4. **Task Filters and Sorting:**
+5. **Task Filters and Sorting:**
 
    - Integrate advanced filtering options, such as status (completed, in-progress, canceled), time duration (daily, weekly, monthly), and ownership (individual, team).
    - Allow users to sort and organize tasks based on priority, due date, or custom criteria.
 
-5. **Bouncy Checkbox for Intuitive Interaction:**
+6. **Bouncy Checkbox for Intuitive Interaction:**
 
    - Utilize the BouncyCheckbox component to provide an engaging and intuitive way for users to mark tasks as completed, in-progress, canceled, or delayed.
 
-6. **Swipeable Task List:**
+7. **Swipeable Task List:**
 
    - Implement a swipeable task list using the SwipeListView component, offering a user-friendly way to delete or mark tasks as complete with simple gestures.
 
-7. **Rich Task Information:**
+8. **Rich Task Information:**
 
    - Display comprehensive task information, including titles, associated images, time durations (daily, weekly, yearly), ownership details (individual, team), and task habits.
 
-8. **Modern UI/UX Design:**
+9. **Modern UI/UX Design:**
 
    - Adopt a modern and clean user interface design, ensuring a visually appealing and intuitive experience for users.
    - Use vibrant colors, clear icons, and consistent styling to enhance overall aesthetics.
 
-9. **Responsive Search Bar:**
+10. **Responsive Search Bar:**
 
    - Implement a responsive search bar that updates search results in real-time as users type.
    - Enhance search functionality by considering various task attributes, enabling users to quickly locate specific information.
 
-10. **Modal-based Filter Options:**
+11. **Modal-based Filter Options:**
 
    - Integrate a modal-based filter system to allow users to customize task views based on their preferences.
    - Include filters for achievements, duration, and collaboration with checkboxes for each status or category.
