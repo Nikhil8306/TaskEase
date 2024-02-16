@@ -57,5 +57,4 @@
     - Implement a system to keep users informed about upcoming tasks, deadlines, or collaborative updates.
     - Allow users to customize notification preferences based on their needs.
 
-   
       
